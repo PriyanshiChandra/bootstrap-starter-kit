@@ -4,3 +4,11 @@ height, width, font-style and beyond.
 Your project also includes bootstrap css 
 so you can use that without typing it in here
 */
+
+/* This is some example CSS. It adds a blank line under
+the carousel
+ */
+
+ .carousel{
+     margin-bottom: 1em;
+ }

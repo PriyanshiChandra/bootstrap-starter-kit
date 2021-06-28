@@ -12,37 +12,94 @@
 
     <!--This is bootstrap's css it adds style to your pages when you include its classes in your HTML-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="/assets/css/styles.css" /><!-- you can edit this file and include your own styles! -->
+    <link href="/assets/css/styles.css" rel="stylesheet" ><!-- you can edit this file and include your own styles! -->
 
     
 </head>
 
 <!--Anything you put in your body tag is visible in your website-->
 <body>
-    <h1> This is an example website</h1>
+    
+    <!--This is navbar. it shows links on the top of a page-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">❗ Put your website's name here</a>
+
+          <!--This is bootstrap magic✨. automatically minimises your navbar to a hamburger button-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">❗ Link 1</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">❗ Link 2</a>
               </li>
-              
               
             </ul>
             
           </div>
         </div>
-      </nav>
+    </nav>
 
+    <!--This is a container, it automatically push your text from the sides of page-->
+    <div class="container">
+        <h1> ❗ This is an example website</h1>
+    
+
+        <!--This is a two column layout it is responsive too-->
+        <div class="row">
+            <div class="col-12 col-lg-8 ">
+                <!--This is carousel-->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <!--You can use images here-->
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/assets/images/img1.jpeg" class="d-block w-100" alt="❗ Add alt text for accessibility reasons">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/images/img2.jpeg" class="d-block w-100" alt="❗ Add alt text for accessibility reasons">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/images/img3.jpeg" class="d-block w-100" alt="❗ Add alt text for accessibility reasons">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus placeat nemo repudiandae obcaecati laboriosam quibusdam at, beatae aliquam sequi corrupti! Cumque at, nemo distinctio natus reprehenderit nam rerum architecto ab.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, repudiandae voluptatum ipsum, dolorum sapiente assumenda, consequuntur voluptatibus exercitationem vel pariatur soluta et quod distinctio. Tempora impedit blanditiis quibusdam natus quaerat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, voluptatibus incidunt? Molestiae magni non quaerat et maxime aspernatur? Pariatur corporis blanditiis commodi id delectus cupiditate ea molestias, similique officiis necessitatibus?</p>
+            </div>
+            <div class="col-12 col-lg-4 ">
+                <!--This is an example card displayed on sidebar. You can include one for you and your teammate-->
+                <div class="card" style="width: 18rem;">
+                    <img src="/assets/images/img4.jpg" class="card-img-top" alt="❗ Add alt text for accessibility reasons">
+                    <div class="card-body">
+                      <p class="card-text">❗ You can put some text here explaining what your sidebar does</p>
+                    </div>
+                </div>
+                <br>
+                <!--You might want to include links in your sidebar too so lets use list groups-->
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="https://getbootstrap.com/docs/5.0/components/list-group/">Bootstrap 5</a></li>
+                    <li class="list-group-item"><a href="https://github.com/PriyanshiChandra/bootstrap-starter-kit">GitHub Repo</a></li>
+                    <li class="list-group-item"><a href="https://organize.mlh.io/participants/events/6813-init-2022">MLH Init 2022</a></li>  
+                </ul>
+            </div>
+        </div>
+    </div>
     <!--This is bootstrap's javascript. including it is what makes our websites interactive stuff work-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--You might want to include your own scripts too. we have included one of our own too-->
+    <script src="/assets/js/scripts.js"></script>
 </body>
 </html>
